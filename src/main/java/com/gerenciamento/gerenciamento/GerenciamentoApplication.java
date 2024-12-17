@@ -17,13 +17,6 @@ public class GerenciamentoApplication {
 
 	@Bean
     CommandLineRunner initDataBase(UserRepository userRepository) {
-        return args -> {
-			// userRepository.deleteAll();
-
-			// UserSystem c = new UserSystem();
-			// c.setNome("Jonnas");
-			// c.setTime("Desenvolvimento");
-			// userRepository.save(c);
-		};
+        return args -> {};
     }
 }

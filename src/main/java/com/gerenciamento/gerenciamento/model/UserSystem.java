@@ -15,8 +15,7 @@ import lombok.Data;
 public class UserSystem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    // @JsonProperty("_id")
-    // @JsonIgnore
+    @JsonIgnore
     private Long id;
 
     @Column(length = 80, nullable = false)
