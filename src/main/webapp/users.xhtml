@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jakartaee.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Lista de Usuários</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:dataTable value="#{userBean.users}" var="user">
+            <p:column headerText="ID">
+                <h:outputText value="#{user.id}" />
+            </p:column>
+            <p:column headerText="Nome">
+                <h:outputText value="#{user.nome}" />
+            </p:column>
+            <p:column headerText="Time">
+                <h:outputText value="#{user.time}" />
+            </p:column>
+        </p:dataTable>
+    </h:form>
+</h:body>
+</html>
