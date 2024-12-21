@@ -7,7 +7,6 @@ import jakarta.faces.webapp.FacesServlet;
 
 @Configuration
 public class JsfConfig {
-
     @Bean
     public ServletRegistrationBean<FacesServlet> facesServletRegistration() {
         ServletRegistrationBean<FacesServlet> srb = new ServletRegistrationBean<>(new FacesServlet(), "*.xhtml");
